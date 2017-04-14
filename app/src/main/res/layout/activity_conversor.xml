@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ipn.morenobeltranlaura.a6im7.vacaciones.Conversor">
+
+    <EditText
+        android:id="@+id/dinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="Pesos Mexicanos"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dinero"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="47dp"
+        android:onClick="setDivisa"
+        android:text="dolares" />
+
+    <Button
+        android:id="@+id/euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dolar"
+        android:onClick="setDivisa"
+        android:layout_centerHorizontal="true"
+        android:text="euros" />
+
+    <Button
+        android:id="@+id/franco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/euro"
+        android:layout_marginStart="37dp"
+        android:onClick="setDivisa"
+        android:layout_toEndOf="@+id/euro"
+        android:text="franco" />
+
+    <Button
+        android:id="@+id/marco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rublo"
+        android:layout_alignBottom="@+id/rublo"
+        android:layout_alignStart="@+id/dinero"
+        android:layout_marginStart="17dp"
+        android:onClick="setDivisa"
+        android:text="marco" />
+
+    <Button
+        android:id="@+id/rublo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="21dp"
+        android:onClick="setDivisa"
+        android:layout_toEndOf="@+id/marco"
+        android:text="rublo" />
+
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:onClick="convertir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ipn.morenobeltranlaura.a6im7.vacaciones.Login">
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:ems="10"
+        android:hint="Nombre usuario"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nombre"
+        android:layout_below="@+id/nombre"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Clave"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/clave"
+        android:layout_below="@+id/clave"
+        android:layout_marginTop="42dp"
+        android:onClick="iniciarSesion"
+        android:text="Entrar" />
+</RelativeLayout>

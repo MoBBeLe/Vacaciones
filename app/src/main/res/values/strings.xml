@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Vacaciones</string>
+    <string-array name="actividades">
+        <item>Conversor</item>
+        <item>Login</item>
+        <item>Calculadora</item>
+    </string-array>
+    <string-array name="ops">
+        <item>Seno</item>
+        <item>Coseno</item>
+        <item>Tangente</item>
+        <item>Factorial</item>
+    </string-array>
+</resources>
